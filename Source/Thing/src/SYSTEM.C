@@ -1522,7 +1522,7 @@ long get_dir_entry(char *dirpath, char *buf, int len, XATTR *xattr) {
 			return (ret);
 		}
 	}
-#define __AHCC__
+#ifdef __AHCC__
   return (-34L);
 #endif
 }
