@@ -43,6 +43,7 @@ typedef struct {
 	_DTA dta, *old;
 } GNF;
 
+#if 0
 typedef struct xattr {
 	unsigned short mode;
 	/* file types */
@@ -86,6 +87,7 @@ typedef struct xattr {
 	short reserved2;
 	long reserved3[2];
 } XATTR;
+#endif
 
 static long do_search(char *searchpath, long *hits, int depth, int follow,
 		char *filemask, int fm_case, int fm_dirs, unsigned int mindate,
