@@ -1,0 +1,12 @@
+- [x] Create a tree that builds using Pure C 1.1
+- [ ] Construct an updated dist.zip
+  - [ ] The resource files seem to have changed since 1.09
+- [ ] Restore the English translation
+  - [ ] Look at 1.09 for old translation? Look in doc sources?
+  - [ ] Make Thing load the right resources depending on the AES language?
+  - [ ] Rebuild the ST Guide docs from the sources
+- [ ] Migrate off Pure C
+  - [ ] Replace build system (multiple PRJs) a Makefile
+  - [ ] Port to gemlib (remove MagX hacks)
+  - [ ] Port to gcc
+  - [ ] Update mintlib
