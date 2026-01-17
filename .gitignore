@@ -1,6 +1,10 @@
 *.o
 *.lib
-*.app
 *.pdb
-*.ovl
-*.prg
+Source/ThingFnd/app/thingfnd.app
+Source/ThingIcn/app/thingicn.app
+Source/Thing/app/thing.app
+Source/ThingRun/app/thingrun.prg
+Source/ThingImg/thingimg.ovl
+Source/ApfelImg/apfel020.ovl
+Source/ApfelImg/apfelimg.ovl
