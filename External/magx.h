@@ -275,6 +275,7 @@ typedef struct
 #define RESCH_COMPLETED  61                                 /* AES 4.0     */
 #define AP_DRAGDROP      63                                 /* AES 4.0     */
 #define SH_WDRAW         72                                 /* MultiTOS    */
+#undef CH_EXIT                                              /* Wrong value in <aes.h> */
 #define CH_EXIT          90                                 /* MultiTOS    */
 #define WM_M_BDROPPED    100                                /* KAOS 1.4    */
 #define SM_M_RES1        101                                /* MAG!X       */
