@@ -1185,7 +1185,7 @@ also taken into account (the applications will get a WM_TOPPED message).
 
 ## ------------------------------------------------------------------------
 
-@node %mcwin "Window - Close
+@node %mcwin "Window - Close"
 @toc "Menu commands"
 @autorefoff
 Window - Close                                                        Thing
