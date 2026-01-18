@@ -3,6 +3,12 @@
 
 @options +z
 @options -s
+@if VERSION >= 6
+@os atari
+@charset atarist
+@inputenc atarist
+@lang en
+@endif
 @author "Arno Welzel"
 @database "Dokumentation zu ThingIcn"
 @subject "Dokumentation/Shells"
