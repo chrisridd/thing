@@ -31,6 +31,12 @@
 
 @options +z
 @options -s
+@if VERSION >= 6
+@os atari
+@charset atarist
+@inputenc atarist
+@lang de
+@endif
 @author "Arno Welzel/Thomas Binder"
 @if @:NAES
 @database "Dokumentation zu N.Thing"
