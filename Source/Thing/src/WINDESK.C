@@ -913,7 +913,7 @@ LOG((0, "After opening %s: fs: %d, lret: %ld\n", wpath->path, fs, lret));
 				uid = gid = 0;
 			}
 		} else {
-			fname = &dbuf[4];
+			fname = dbuf;
 
 			/* Aktuelles Verzeichnis setzen, damit bei Fxattr() nicht
 			 jedesmal ein kompletter Pfad Uebergeben werde muss */
@@ -1102,7 +1102,6 @@ LOG((0, "After opening %s: fs: %d, lret: %ld\n", wpath->path, fs, lret));
 					wpath->e_num++;
 
 					entry->link = link;
-
 					ename = entry->name;
 					strcpy(ename, fname);
 
@@ -1162,9 +1161,9 @@ LOG((0, "After opening %s: fs: %d, lret: %ld\n", wpath->path, fs, lret));
 			}
 		} else {
 			/* Wenn moeglich, Dxreaddir() verwenden */
-			if (usexr)
+			if (usexr) {
 				lret = Dxreaddir(MAX_FLEN + 4, dhandle, dbuf, &xattr, &xret);
-			else {
+			} else {
 				/* Sonst Dreaddir()/Fxattr() */
 				lret = Dreaddir(MAX_FLEN + 4, dhandle, dbuf);
 
